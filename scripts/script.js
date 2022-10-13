@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     var checkbox = document.querySelector('input[name=theme]');
 
     var bannerImg = document.querySelector('#leadBannerImg');
@@ -112,7 +111,7 @@ $(document).ready(function() {
 
     // Image cycle in modal //
 
-    // var allImages = document.querySelector(".slides > img");
+    var allImages = document.querySelector(".slides > img");
     var counter = 1;
     setInterval(() => {
         document.getElementById('radio' + counter).checked = true;
@@ -120,7 +119,7 @@ $(document).ready(function() {
         if (counter > 3) {
             counter = 1;
         }
-    }, 5000);
+    }, 3000);
 
 
 });
