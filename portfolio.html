@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <title>Doggoland Portfolio</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
@@ -48,20 +49,19 @@
             <div id="portfolioNav">
 
                 <form class="wrapper1">
-                    <div>
-                        <label1 for="searchBar">Search</label1>
-                        <input type="text" id="searchBar" placeholder="Type dog name">&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+                    <div id="search-container">
+
+                        <input type="text" id="searchBar" placeholder="Type dog name">
+                        <button id="search">Search</button>
+
                     </div>
 
-                    <div>
-                        <a>Bred For : </a>
-                        <input type="checkbox" id="familyDogs" name="checkbox1">
-                        <label1 for="familyDogs">Family</label1>
-                        <input type="checkbox" id="guardDogs" name="checkbox2">
-                        <label1 for="guardDogs">Guarding</label1>
-                        <input type="checkbox" id="herdingDogs" name="checkbox3">
-                        <label1 for="herdingDogs">Herding Dogs</label1>
-
+                    <div id="filterButtons">
+                        <a>Filter Dogs by Breed : </a>
+                        <button class="breedFilter active" id="allDogs" data-filter="all">All</button>
+                        <button class="breedFilter" id="familyDogs" data-filter="family">Family</button>
+                        <button class="breedFilter" id="guardDogs" data-filter="guarding">Guarding</button>
+                        <button class="breedFilter" id="herdingDogs" data-filter="herding">Herding</button>
                     </div>
 
 
@@ -76,173 +76,8 @@
         <div class="wrapper1">
             <section id="dogList">
                 <h2>Various Dog Breeds</h2>
-                <ul>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/beardedCollie/Bearded-Collie-standing-in-the-grass.jpeg" alt="Bearded Collie" title="herding">
-                        <h3>Bearded Collie</h3>
-                        <p>A boisterous and charismatic droving dog from Scotland, the shaggy-coated Bearded Collie ('Beardie' to his friends) enjoys outdoor exercise in all weather. </p>
-                        <button id="bcollie">View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/belgianSheepdog/Belgian-Sheepdog-standing-in-a-field.jpeg" alt="Belgian Sheepdog" title="herding">
-                        <h3>Belgian Sheepdog</h3>
-                        <p>The first impression of the Belgian Sheepdog is that of a well balanced, square dog, elegant in appearance, with an exceedingly proud carriage of the head.
-                        </p>
-                        <button id="bsheepdog">View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/bergerPicard/Berger-Picard-standing-in-a-field.jpeg" alt="Berger Picard" title="herding">
-                        <h3>Berger Picard</h3>
-                        <p>The Berger Picard is an ancient breed developed by the farmers and sheep herders of the Picardy region of northern France. They are medium-sized and sturdy.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/norwegianBuhund/Norwegian-Buhund-On-White-01.jpeg" alt="Norwegian Buhund" title="herding">
-                        <h3>Norwegian Buhund</h3>
-                        <p>The Norwegian Buhund is a herding dog. It is a typical northern breed, a little under medium size and squarely built, with a tightly curled tail carried over the back.</p>
-                        <button>View more</button>
-                    </li>
 
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/entlebucherMountainDog/Entlebucher-Mountain-Dog-outdoors-standing-in-a-field.jpeg" alt="Entlebucher Mountain Dog" title="herding">
-                        <h3>Entlebucher Mountain Dog</h3>
-                        <p>The Entlebucher Mountain Dog (Shepherd Dog from Entlebuch) is a native of Switzerland, and the smallest of the four Swiss Sennenhund breeds.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/germanShepherd/German-Shepherd-on-White-00.jpeg" alt="German Shepherd" title="herding">
-                        <h3>German Shepherd</h3>
-                        <p>A German Shepherd Dog is a strong, agile, well muscled animal, alert and full of life. It is tall, deep-bodied, with an outline of smooth curves rather than angles.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/pembrokeWelshCorgi/Pembroke-Welsh-Corgi-standing-outdoors-in-the-fall.jpeg" alt="Pembroke Welsh Corgi" title="herding">
-                        <h3>Pembroke Welsh Corgi</h3>
-                        <p>Low-set, strong, sturdily built and active, giving an impression of substance and stamina in a small space. Outlook bold, but kindly. Expression, intelligent and interested.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/swedishVallhund/Swedish-Vallhund-running-in-the-grass.jpeg" alt="Swedish Vallhund" title="herding">
-                        <h3>Swedish Vallhund</h3>
-                        <p>The Swedish Vallhund is a very old Spitz-type breed known since the time of the Vikings. For centuries the SV has been kept as a farm dog and used for herding cattle. </p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/herdingDogs/pyreneanShepherd/Pyrenean-Shepherd-standing-in-profile-in-a-field.jpeg" alt="Pyrenean Shepherd" title="herding">
-                        <h3>Pyrenean Shepherd</h3>
-                        <p>A small, lively dog whose sparkling personality and quicksilver intelligence are reflected in the vibrant expression of his unique triangular head and windswept face.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/beauceron/Beauceron-On-White-03.jpeg" alt="Beauceron" title="guarding">
-                        <h3>Beauceron</h3>
-                        <p>The Beauceron is an old and distinct French breed of herding dog, developed solely in France with no foreign crosses. Dogs were bred and selected for herding.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/boerboel/Boerboel-On-White-01.jpeg" alt="Boerboel" title="guarding">
-                        <h3>Boerboel</h3>
-                        <p>The Boerboel developed as a general farm dog for the pioneers who settled in South Africa. These dogs were often the first line of defense against predators.
-                        </p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/bullmastiff/Bullmastiff-on-White-05.jpeg" alt="Bull Mastiff" title="guarding">
-                        <h3>Bull Mastiff</h3>
-                        <p>The breed was developed in England by gamekeepers for protection against poachers. Great strength, endurance, and alertness; powerfully built but active.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/doberman/Doberman-Pinscher-standing-outdoors.jpeg" alt="Doberman Pinscher" title="guarding">
-                        <h3>Doberman Pinscher</h3>
-                        <p>Compactly built, muscular and powerful, for great endurance and speed. Elegant in appearance, of proud carriage, reflecting great nobility and temperament.</p>
-                        <button>View more</button>
-                    </li>
-
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/rottweiler/Rottweiler-On-White-03.jpeg" alt="Rottweiler" title="guarding">
-                        <h3>Rottweiler</h3>
-                        <p> Rottweiler is a medium large, robust and powerful dog, black with clearly defined rust markings. Substantial build, great strength, agility and endurance.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/hovawart/Hovawart.10.jpg" alt="Hovawart" title="guarding">
-                        <h3>Hovawart</h3>
-                        <p>The Hovawart is a very old German working dog breed. The Hovawart is a powerful, medium size, slightly elongated, long-haired working dog. The coat is black and shiny.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/staffbullTerrier/Staffordshire-Bull-Terrier-On-White-01.jpeg" alt="Staffordshire Bull Terrier" title="guarding">
-                        <h3>Staffordshire Bull Terrier</h3>
-                        <p>The Staffordshire Bull Terrier is a smooth-coated dog. It should be of great strength for its size and, although muscular, should be active and agile. Quiet and trustworthy.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/tornjak/Tornjak-standing-in-the-woods.jpeg" alt="Tornjak" title="guarding">
-                        <h3>Tornjak</h3>
-                        <p>The Tornjak is a large, powerful dog, well-proportioned and agile. Body shape is almost square. The bone is not light, but nevertheless not heavy nor coarse.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/guardDogs/tibetianMastiff/Tibetan-Mastiff-On-White-01.jpeg" alt="Tibetan Mastiff" title="guarding">
-                        <h3>Tibetan Mastiff</h3>
-                        <p>The Tibetian Mastiff is noble and impressive: large, but not a giant breed. An athletic and substantial dog, of solemn but kindly appearance. The body is slightly longer than tall.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/alaskanMalamute/Alaskan-Malamute-standing-in-the-grass1.jpeg" alt="Alaskan Malamute" title="family">
-                        <h3>Alaskan Malamute</h3>
-                        <p> The Alaskan Malamute, one of the oldest Arctic sled dogs, is a powerful and substantially built dog with a deep chest and strong, well-muscled body. The head is broad.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/americanStaffTerrier/AmStaff.01.jpg" alt="American Staffordshire Terrier" title="family">
-                        <h3>Staffordshire Terrier</h3>
-                        <p>The American Staffordshire Terrier should give the impression of great strength for his size, a well put-together dog, muscular, but agile and graceful, keenly alive to his surroundings.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/beagle/Beagle-standing-in-profile-looking-up-in-the-yard.jpeg" alt="Beagle" title="family">
-                        <h3>Beagle</h3>
-                        <p>Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and thanks to its pleading expression. They were bred to hunt in packs.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/drever/Brindle-Drever-standing-outdoors.jpeg" alt="Brindle Drever" title="family">
-                        <h3>Brindle Drever</h3>
-                        <p>Rather long in body and fairly short on legs. Appears robust and strong rather than elegant and speedy. Proud carriage, well developed muscles and agile appearance.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/biewerTerrier/Biewer-Terrier-standing-on-a-white-background.jpeg" alt="Biewer Terrier" title="family">
-                        <h3>Biewer Terrier</h3>
-                        <p>The Biewer Terrier is an elegant, longhaired, uniquely colored terrier with a breed signature ponytail. The coat hangs straight and evenly on both sides of the body.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/broholmer/Broholmer-standing-in-a-field-of-tall-grasses-at-sunset.jpeg" alt="Broholmer" title="family">
-                        <h3>Broholmer</h3>
-                        <p>A Mastiff-type of dog of large size, rectangular and strongly built, with composed and powerful movement. Its appearance is dominated by the powerful forequarters.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/pug/Pug-On-White-01.jpeg" alt="Pug" title="family">
-                        <h3>Pug</h3>
-                        <p>The small but solid Pug is today adored by his millions of fans around the world. This is an even-tempered breed, exhibiting stability, playfulness and great charm.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/goldenRetriever/Golden-Retriever-standing-outdoors.jpeg" alt="Golden Retriever" title="family">
-                        <h3>Golden Retriever</h3>
-                        <p>The Golden Retriever is an active dog, sound and well put together, displaying a kindly expression and possessing a personality that is eager, alert and self-confident.</p>
-                        <button>View more</button>
-                    </li>
-                    <li>
-                        <img src="images/dogBreeds/familyDogs/labrador/Labrador-Retriever-On-White-01.jpeg" alt="Labrador Retriever" title="family">
-                        <h3>Labrador Retriever</h3>
-                        <p> The Labrador Retriever is a strong, medium-sized dog with a sound, athletic, well-balanced conformation that enables it to function as a retrieving gun dog and also a family companion.</p>
-                        <button>View more</button>
-                    </li>
+                <ul id="dogListInfo">
 
 
                 </ul>
@@ -253,132 +88,21 @@
         </div>
     </div>
 
-    <!-- Bearded Collie Modal -->
 
-    <div class="bg-modal" id="modal1">
-        <div class="modal-content">
-            <div class="modal">
-                <h3>Bearded Collie</h3>
-                <div class="slider">
-                    <div class="slides">
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-
-                        <div class="slide first">
-                            <img src="images/dogBreeds/herdingDogs/beardedCollie/Bearded-Collie-standing-in-the-grass.jpeg" alt="BeardedCollie">
-                        </div>
-                        <div class="slide">
-                            <img src="images/dogBreeds/herdingDogs/beardedCollie/Bearded-Collie-walking-in-the-grass.jpeg" alt="BeardedCollie2">
-                        </div>
-                        <div class="slide">
-                            <img src="images/dogBreeds/herdingDogs/beardedCollie/Bearded-Collie-sitting-in-a-grassy-field.jpeg" alt="BeardedCollie3">
-                        </div>
+    <div id="modalMain">
 
 
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                        </div>
-                    </div>
-                    <div class="navigation-manual">
-
-                        <label2 for="radio1" class="manual-btn"></label2>
-                        <label2 for="radio2" class="manual-btn"></label2>
-                        <label2 for="radio3" class="manual-btn"></label2>
-
-                    </div>
-                </div>
-
-                <p>The Border Collie is a well balanced, medium-sized dog of athletic appearance, displaying gracefulness, power and agility in equal measure. Its hard, muscular body conveys the impression of effortless movement and endless endurance. The
-                    Border Collie is extremely intelligent, with its keen, alert expression being a very important characteristic of the breed. Those aspects of structure, movement or temperament that enhance the dog's ability to function as a herding
-                    dog are virtues that should be strongly rewarded. The Border Collie is, and should remain, a natural and unspoiled true working sheep dog whose conformation is described herein. Honorable scars and broken teeth incurred in the line
-                    of duty are acceptable.</p>
-
-                <table>
-                    <tr>
-                        <th>Lifespan</th>
-                        <th>Temperament</th>
-                        <th>Coat Type</th>
-                    </tr>
-                    <tr>
-                        <td>14 - 15 years</td>
-                        <td>Energetic, keen, intelligent, alert, responsive</td>
-                        <td>Rough and smooth</td>
-                    </tr>
-                </table>
-                <button id="close1">Close</button>
-            </div>
-        </div>
     </div>
 
-    <!-- Belgian Sheepdog Modal -->
-
-    <div class="bg-modal" id="modal2">
-        <div class="modal-content">
-            <div class="modal">
-                <h3>Belgian Sheepdog</h3>
-                <div class="slider">
-                    <div class="slides">
-                        <input type="radio" name="radio-btn" id="radio4">
-                        <input type="radio" name="radio-btn" id="radio5">
-                        <input type="radio" name="radio-btn" id="radio6">
-
-                        <div class="slide first">
-                            <img src="images/dogBreeds/herdingDogs/belgianSheepdog/Belgian-Sheepdog-standing-in-a-field.jpeg" alt="Belgian Sheepdog">
-                        </div>
-                        <div class="slide">
-                            <img src="images/dogBreeds/herdingDogs/belgianSheepdog/Belgian-Sheepdog-running-down-a-path.jpeg" alt="Belgian Sheepdog2">
-                        </div>
-                        <div class="slide">
-                            <img src="images/dogBreeds/herdingDogs/belgianSheepdog/Belgian-Sheepdog-head-portrait-outdoors.jpeg" alt="Belgian Sheepdog3">
-                        </div>
-
-
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                        </div>
-                    </div>
-                    <div class="navigation-manual">
-
-                        <label2 for="radio4" class="manual-btn"></label2>
-                        <label2 for="radio5" class="manual-btn"></label2>
-                        <label2 for="radio6" class="manual-btn"></label2>
-
-                    </div>
-                </div>
-
-                <p>The first impression of the Belgian Sheepdog is that of a well balanced, square dog, elegant in appearance, with an exceedingly proud carriage of the head and neck. He is a strong, agile, well muscled animal, alert and full of life. His
-                    whole conformation gives the impression of depth and solidity without bulkiness. The male dog is usually somewhat more impressive and grand than his female counterpart. Faults - Any deviation from these specifications is a fault. In
-                    determining whether a fault is minor, serious, or major, these two factors should be used as a guide: 1. The extent to which it deviates from the standard. 2. The extent to which such deviation would actually affect the working ability
-                    of the dog.</p>
-
-                <table>
-                    <tr>
-                        <th>Lifespan</th>
-                        <th>Temperament</th>
-                        <th>Coat Type</th>
-                    </tr>
-                    <tr>
-                        <td>13 - 14 years</td>
-                        <td>Powerful, Intelligent, Affectionate, Loyal, Active</td>
-                        <td>Long, well-fitting, straight and abundant</td>
-                    </tr>
-                </table>
-                <button id="close2">Close</button>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <h3>Thanks for visiting Doggoland</h3>
     </footer>
 
+
     <script src="/scripts/jquery-3.6.1.js"></script>
-    <script src="/scripts/script.js"></script>
+    <script type="module" src="/scripts/script.js"></script>
+    <!-- <script type="module" src="/scripts/script.js"></script> -->
 </body>
 
 </html>

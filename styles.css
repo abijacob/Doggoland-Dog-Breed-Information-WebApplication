@@ -273,6 +273,61 @@
     font-style: bold; */
     }
     
+    .dogLis button {
+        padding: 5px 10px;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 15px;
+    }
+    
+    .active {
+        background-color: #e1b000;
+        color: #ffffff;
+    }
+    /* CSS for Filter buttons */
+    
+    .breedFilter {
+        width: 80px;
+        border: 2px solid #fcfcfc;
+        padding: 5px 10px;
+        border-radius: 15px;
+        background-color: transparent;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    .active {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    
+    .hide {
+        display: none;
+    }
+    /* #search-container {} */
+    
+    #search-container input {
+        background-color: transparent;
+        width: 59%;
+        border-bottom: 2px solid #ffffff;
+        padding: 5px 10px;
+    }
+    
+    #search-container input:focus {
+        border-bottom-color: #ffffff;
+    }
+    
+     ::placeholder {
+        color: rgb(59, 58, 58);
+    }
+    
+    #search {
+        padding: 5px 10px;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 15px;
+    }
+    
     section#main-dogList ul {
         list-style-type: none;
     }
@@ -390,44 +445,6 @@
     
     .slide img {
         max-width: 350px;
-    }
-    /* Css for manual slider navigation */
-    
-    .navigation-manual {
-        z-index: 2;
-        position: absolute;
-        left: 320px;
-        top: 370px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .manual-btn {
-        border: 2px solid white;
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-    }
-    
-    .manual-btn:not(:last-child) {
-        margin-right: 40px;
-    }
-    
-    .manual-btn:hover {
-        background: #888;
-    }
-    
-    #radio1:checked~.first {
-        margin-left: 0;
-    }
-    
-    #radio2:checked~.first {
-        margin-left: -100%;
-    }
-    
-    #radio3:checked~.first {
-        margin-left: -200%;
     }
     /* Css for automatic navigation */
     
